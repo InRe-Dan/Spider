@@ -5,6 +5,6 @@ Python Version 3.8
 discord.py version 1.2.5
 
 How to use - 
-Open c.example.py and fill in all the required fields
-Save as c.py
-Run index.py
+Open c.example.py and fill in all the required fields,
+save as c.py,
+run index.py
