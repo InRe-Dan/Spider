@@ -14,36 +14,6 @@ import c
 
 client = discord.Client()
 
-
-# To-do
-#    Reorganize functions and features into more classes and files
-#    Add a lockdown command that prevents messages from being sent
-#    Add an automod that deletes messages containing filtered words or phrases
-#        Suggested - make the automod response messages randomised and very embarassing
-#    "reactwith" command to react with animated emojis that are unavailable to non nitro users
-
-# To improve
-#    Make the times  on the reminder system based on a #d#h#m format
-#    Improve responses and text formatting
-#    Add "fun" maths commands like quadratic solving, differentiation etc.
-#    Reduce the size of index.py and separate entire commands into different files and classes
-#    Add a timezone conversion function (Method and syntax TBD)
-#    Clean up note commands and make it easier to identify what ID the notes are when outputting all of them
-#    Fix issue - Notes with \n in them will save as separate notes
-#        Alternatively, make it a feature - make the note prompts and responses reflect that several notes are being saved
-#    Allow moderators and administrators to use botuser commands without requiring the role
-#    Rework/optimize the role checking
-#       Work towards removing the get_roles() function
-#       Make different tiers of access, where a higher tier will have all the commands of the lower tiers
-#    Add support for all standardized timezones
-
-# Tests
-#   Continuously test variations of commands to make sure the functions don't break due to spelling or syntax mistakes
-#   Test if the time system accounts for DST accurately
-
-# Currently working on
-#     -
-
 # Functions
 
 def clean_command(content):
