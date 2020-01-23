@@ -1,0 +1,40 @@
+Version Zero - //note and barebones
+	The bot can remotely close itself using the "shutdown" command
+	The bot can send announcements from specified users in c.py
+		The bot will automatically react to these announcements with thumbsup and thumbsdown
+	The bot can manipulate notes for individual users
+		Current commands are save, clear, read and read all
+			Delete command unavailable
+
+
+Update 1 - "reminder" and polish
+	Slight changes to subroutines, optimizations throughout
+	Delete function added in textfile, used for reminders and notes
+	Bot can now save reminders for users and read them back at a specified time using the addreminder command
+	The bot will read all overdue reminders on restart
+
+Update 2 - "time" and cleanup
+	Cleaned up imports to meet conventions 
+	Replaced all open() and close() functions with "with open(x) as y"
+	Added a c.example.py file to allow other users to host the bot
+	Administrative functions are now available to the administrator role as opposed to one user
+	c.py now requires IDs only as opposed to full role and channel objects
+	Merged "secret.py" to "c.py"
+	Notes are now restricted to 200 characters, and note files that are over 1900 characters long will be sent as text files automatically
+	Users may now only save up to 50 notes
+	Implemented basic timezone conversion tools
+		Current supported formats are UTC +/- x and a small selection of relevant timezones
+		The system is farily modular, and more timezones can be added by modifying the "timezones" dictionary in times.py
+	"botannounce" has been reworked
+		The command is available to the moderator role
+		The command sends the full text to the announcement channel
+		The automatic reactions have been scrapped and will be replaced
+	Added a help command, and derivatives of it
+		Users can now view commands and their functions by using "help <branch>"
+		Users can view available command branches just by using "help"
+	The bot will state it's prefix and point users to the "help" command if mentioned in a message containing nothing else
+	Finished the "vote" command
+	Added the Apache License 2.0 to the repository.
+
+
+
