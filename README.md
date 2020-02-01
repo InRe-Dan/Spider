@@ -1,6 +1,5 @@
 # Spider
-Moderation and utility bot for The Recluse Den Discord server.
-Please do not redistribute.
+Moderation and utility bot made for The Recluse Den Discord server.
 
 Python Version 3.8
 
